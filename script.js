@@ -10,10 +10,8 @@ let company = {
 
 function getTotalSalary(department) {
   if (Array.isArray(department)) {
-    // If the department is an array, sum up the salaries of all employees
     return department.reduce((total, employee) => total + employee.salary, 0);
   } else {
-    // If the department is an object, recursively sum the salaries of its sub-departments
     return Object.values(department).reduce((total, subDept) => total + getTotalSalary(subDept), 0);
   }
 }
