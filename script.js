@@ -1,6 +1,6 @@
 "use strict";
 
-let company = {
+const company = {
   sales: [{ name: "John", salary: 1000 }, { name: "Alice", salary: 600 }],
   development: {
     web: [{ name: "Peter", salary: 2000 }, { name: "Alex", salary: 1800 }],
@@ -16,7 +16,7 @@ function getTotalSalary(department) {
   }
 }
 
-let totalSalary = getTotalSalary(company);
+const totalSalary = getTotalSalary(company);
 console.log("Total Salary:", totalSalary);
 
 
